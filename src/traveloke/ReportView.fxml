@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="traveloke.ReportViewController">
+   <children>
+      <Pane fx:id="FlightReport" prefHeight="710.0" prefWidth="956.0" style="-fx-background-color: #fff;" visible="false">
+         <children>
+            <Label layoutX="47.0" layoutY="37.0" text="E-Ticket">
+               <font>
+                  <Font name="Roboto Light" size="46.0" />
+               </font>
+            </Label>
+            <Label layoutX="251.0" layoutY="38.0" text=" Check-in Trouble ?" textFill="#aaaaaa">
+               <font>
+                  <Font name="Roboto Light" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="252.0" layoutY="65.0" text="081-545-8900 / cs@traveloke.com">
+               <font>
+                  <Font name="Roboto Medium" size="17.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ba0e2" height="78.0" layoutX="618.0" layoutY="27.0" stroke="#1ba0e2" strokeType="INSIDE" width="338.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="4.0" layoutX="25.0" layoutY="176.0" stroke="#505050" strokeType="INSIDE" width="909.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="4.0" layoutX="25.0" layoutY="406.0" stroke="#505050" strokeType="INSIDE" width="909.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="4.0" layoutX="25.0" layoutY="486.0" stroke="#505050" strokeType="INSIDE" width="909.0" />
+            <Label layoutX="51.0" layoutY="129.0" text="Departure Flight" textFill="#aaaaaa">
+               <font>
+                  <Font name="Roboto Light" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="airasia" fitHeight="65.0" fitWidth="147.0" layoutX="57.0" layoutY="231.0">
+               <image>
+                  <Image url="@Assets/airasia.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="citilink" fitHeight="65.0" fitWidth="147.0" layoutX="62.0" layoutY="227.0" visible="false">
+               <image>
+                  <Image url="@Assets/citilink.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="garuda" fitHeight="68.0" fitWidth="136.0" layoutX="57.0" layoutY="226.0" visible="false">
+               <image>
+                  <Image url="@Assets/garuda.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="dateflght" layoutX="356.0" layoutY="211.0" text="Tuesday, 23 November 2017">
+               <font>
+                  <Font name="Roboto Medium" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="airline" layoutX="62.0" layoutY="308.0" text="Air Asia">
+               <font>
+                  <Font name="Roboto Medium" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="61.0" layoutY="327.0" text="Subclass (Economy)">
+               <font>
+                  <Font name="Roboto Light" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="127.0" layoutY="308.0" text="ID-6451">
+               <font>
+                  <Font name="Roboto Medium" size="17.0" />
+               </font>
+            </Label>
+            <Circle fill="#505050" layoutX="463.0" layoutY="274.0" radius="9.0" stroke="#505050" strokeType="INSIDE" />
+            <Circle fill="#505050" layoutX="463.0" layoutY="365.0" radius="9.0" stroke="#505050" strokeType="INSIDE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="83.0" layoutX="461.0" layoutY="277.0" stroke="#505050" strokeType="INSIDE" width="4.0" />
+            <Label fx:id="kotflightdep" layoutX="488.0" layoutY="256.0" text="Surabaya" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="kotflghtariv" layoutX="488.0" layoutY="344.0" text="Balikpapan" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="wktflghtdep" layoutX="367.0" layoutY="262.0" text="20.00" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="wktflghtariv" layoutX="368.0" layoutY="340.0" text="20.00" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="709.0" layoutY="239.0" text="Booking Code" textFill="#505050">
+               <font>
+                  <Font name="Roboto Light" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="kodebookflght" layoutX="737.0" layoutY="281.0" text="AB981" textFill="#1ba0e2">
+               <font>
+                  <Font name="Futura Bk BT Book" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="52.0" layoutX="109.0" layoutY="421.0">
+               <image>
+                  <Image url="@Assets/business.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="177.0" layoutY="426.0" text="Show your e-ticket and &#10;passenger identity when check-in" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="81.0" layoutX="530.0" layoutY="419.0">
+               <image>
+                  <Image url="@Assets/time7.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="621.0" layoutY="427.0" text="Maximal check-in 90 minute &#10;before departure schedule" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="503.0" text="No" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="503.0" text="Passenger Name" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="770.0" layoutY="505.0" text="Insurance" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="577.0" layoutY="503.0" text="Baggage" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="386.0" layoutY="503.0" text="DOB" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="idf" layoutX="43.0" layoutY="543.0" text="1" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="namaf" layoutX="110.0" layoutY="543.0" prefHeight="23.0" prefWidth="183.0" text="Mr. Mirza Ukasyah" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="dobf" layoutX="360.0" layoutY="543.0" text="22/07/2017" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="baggagef" layoutX="548.0" layoutY="543.0" prefHeight="23.0" prefWidth="164.0" text="25 kg - Rp.100.000" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="211.0" layoutX="695.0" layoutY="35.0">
+               <image>
+                  <Image url="@Assets/travelokepth.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="410.0" layoutY="633.0" onAction="#cetakflight" style="-fx-background-color: #f96d01;" text="PRINT TICKET" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="no" fitHeight="41.0" fitWidth="45.0" layoutX="790.0" layoutY="531.0" visible="false">
+               <image>
+                  <Image url="@Assets/false.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yes" fitHeight="38.0" fitWidth="59.0" layoutX="786.0" layoutY="530.0">
+               <image>
+                  <Image url="@Assets/true.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="HotelReport" prefHeight="710.0" prefWidth="956.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="57.0" layoutY="57.0" text="E-Ticket">
+               <font>
+                  <Font name="Roboto Light" size="46.0" />
+               </font>
+            </Label>
+            <Label layoutX="261.0" layoutY="58.0" text=" Check-in Trouble ?" textFill="#aaaaaa">
+               <font>
+                  <Font name="Roboto Light" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="262.0" layoutY="85.0" text="081-545-8900 / cs@traveloke.com">
+               <font>
+                  <Font name="Roboto Medium" size="17.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ba0e2" height="78.0" layoutX="618.0" layoutY="47.0" stroke="#1ba0e2" strokeType="INSIDE" width="338.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="4.0" layoutX="35.0" layoutY="196.0" stroke="#505050" strokeType="INSIDE" width="909.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="4.0" layoutX="35.0" layoutY="426.0" stroke="#505050" strokeType="INSIDE" width="909.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="4.0" layoutX="35.0" layoutY="506.0" stroke="#505050" strokeType="INSIDE" width="909.0" />
+            <Label layoutX="61.0" layoutY="149.0" text="Booking Hotel " textFill="#aaaaaa">
+               <font>
+                  <Font name="Roboto Light" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="idcin" layoutX="561.0" layoutY="240.0" text="Tue, 23 Nov 2017">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="hotelnm" layoutX="213.0" layoutY="245.0" text="Best Western Premiere" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="idlocation" layoutX="215.0" layoutY="286.0" text="Location" textFill="#aaaaaa">
+               <font>
+                  <Font name="Roboto Medium" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="room" layoutX="562.0" layoutY="312.0" text="20.00" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="guest" layoutX="563.0" layoutY="349.0" text="20.00" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="758.0" layoutY="259.0" text="Booking Code" textFill="#505050">
+               <font>
+                  <Font name="Roboto Light" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="kodebookhotel" layoutX="786.0" layoutY="301.0" text="AB981" textFill="#1ba0e2">
+               <font>
+                  <Font name="Futura Bk BT Book" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="52.0" layoutX="119.0" layoutY="441.0">
+               <image>
+                  <Image url="@Assets/business.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="187.0" layoutY="446.0" text="Show your e-ticket and &#10;passenger identity when check-in" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="81.0" layoutX="540.0" layoutY="439.0">
+               <image>
+                  <Image url="@Assets/time7.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="631.0" layoutY="447.0" text="Maximal check-out 30 minute &#10;before check-out schedule" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="523.0" text="No" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="117.0" layoutY="523.0" text="Guest Name" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="767.0" layoutY="523.0" text="Phone Number" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="396.0" layoutY="523.0" text="Email" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="idh" layoutX="53.0" layoutY="563.0" text="1" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="namah" layoutX="120.0" layoutY="563.0" prefHeight="23.0" prefWidth="183.0" text="Mr. Mirza Ukasyah" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailh" layoutX="385.0" layoutY="563.0" text="mail@mail.com" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="numberh" layoutX="764.0" layoutY="563.0" prefHeight="23.0" prefWidth="110.0" text="1234567890" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="211.0" layoutX="695.0" layoutY="55.0">
+               <image>
+                  <Image url="@Assets/travelokepth.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="410.0" layoutY="633.0" onAction="#cetakhotel" style="-fx-background-color: #f96d01;" text="PRINT TICKET" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="h1" fitHeight="150.0" fitWidth="150.0" layoutX="53.0" layoutY="239.0" visible="false">
+               <image>
+                  <Image url="@Assets/1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="h2" fitHeight="150.0" fitWidth="150.0" layoutX="53.0" layoutY="239.0">
+               <image>
+                  <Image url="@Assets/2.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="451.0" layoutY="235.0" text="Check In ">
+               <font>
+                  <Font name="Roboto" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="450.0" layoutY="278.0" text="Check Out">
+               <font>
+                  <Font name="Roboto" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="451.0" layoutY="318.0" text="Room">
+               <font>
+                  <Font name="Roboto" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="452.0" layoutY="352.0" text="Guest">
+               <font>
+                  <Font name="Roboto" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="idcout" layoutX="561.0" layoutY="280.0" text="Tue, 23 Nov 2017">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="h4" fitHeight="150.0" fitWidth="150.0" layoutX="53.0" layoutY="239.0" visible="false">
+               <image>
+                  <Image url="@Assets/4.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="h3" fitHeight="150.0" fitWidth="150.0" layoutX="53.0" layoutY="239.0">
+               <image>
+                  <Image url="@Assets/3.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="TrainReport" prefHeight="710.0" prefWidth="956.0" style="-fx-background-color: #fff;" visible="false">
+         <children>
+            <Label layoutX="57.0" layoutY="47.0" text="E-Ticket">
+               <font>
+                  <Font name="Roboto Light" size="46.0" />
+               </font>
+            </Label>
+            <Label layoutX="261.0" layoutY="48.0" text=" Check-in Trouble ?" textFill="#aaaaaa">
+               <font>
+                  <Font name="Roboto Light" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="idtype" layoutX="262.0" layoutY="75.0" text="081-545-8900 / cs@traveloke.com">
+               <font>
+                  <Font name="Roboto Medium" size="17.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ba0e2" height="78.0" layoutX="618.0" layoutY="37.0" stroke="#1ba0e2" strokeType="INSIDE" width="338.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="4.0" layoutX="35.0" layoutY="186.0" stroke="#505050" strokeType="INSIDE" width="909.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="4.0" layoutX="35.0" layoutY="416.0" stroke="#505050" strokeType="INSIDE" width="909.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="4.0" layoutX="35.0" layoutY="496.0" stroke="#505050" strokeType="INSIDE" width="909.0" />
+            <Label layoutX="61.0" layoutY="139.0" text="Departure Train" textFill="#aaaaaa">
+               <font>
+                  <Font name="Roboto Light" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="datetrain" layoutX="366.0" layoutY="221.0" text="Tuesday, 23 November 2017">
+               <font>
+                  <Font name="Roboto Medium" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="train" layoutX="74.0" layoutY="274.0" prefHeight="49.0" prefWidth="226.0" text="Sembrani">
+               <font>
+                  <Font name="Roboto Medium" size="41.0" />
+               </font>
+            </Label>
+            <Label fx:id="trainclass" layoutX="76.0" layoutY="328.0" text="Executive (A)">
+               <font>
+                  <Font name="Roboto Light" size="19.0" />
+               </font>
+            </Label>
+            <Circle fill="#505050" layoutX="473.0" layoutY="284.0" radius="9.0" stroke="#505050" strokeType="INSIDE" />
+            <Circle fill="#505050" layoutX="473.0" layoutY="375.0" radius="9.0" stroke="#505050" strokeType="INSIDE" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#505050" height="83.0" layoutX="471.0" layoutY="287.0" stroke="#505050" strokeType="INSIDE" width="4.0" />
+            <Label fx:id="kottraindep" layoutX="498.0" layoutY="266.0" text="Surabaya" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="kottrainariv" layoutX="498.0" layoutY="354.0" text="Balikpapan" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="wkttraindep" layoutX="377.0" layoutY="272.0" text="20.00" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="wkttrainariv" layoutX="378.0" layoutY="350.0" text="20.00" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="719.0" layoutY="249.0" text="Booking Code" textFill="#505050">
+               <font>
+                  <Font name="Roboto Light" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="kodebooktrain" layoutX="747.0" layoutY="291.0" text="AB981" textFill="#1ba0e2">
+               <font>
+                  <Font name="Futura Bk BT Book" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="52.0" layoutX="119.0" layoutY="431.0">
+               <image>
+                  <Image url="@Assets/business.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="187.0" layoutY="436.0" text="Show your e-ticket and &#10;passenger identity when check-in" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="81.0" layoutX="540.0" layoutY="429.0">
+               <image>
+                  <Image url="@Assets/time7.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="631.0" layoutY="437.0" text="Maximal check-in 30 minute &#10;before departure schedule" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="513.0" text="No" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="117.0" layoutY="513.0" text="Passenger Name" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="557.0" layoutY="513.0" text="ID Number" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="777.0" layoutY="513.0" text="Insurance" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="396.0" layoutY="513.0" text="ID Type" textFill="#505050">
+               <font>
+                  <Font name="Roboto Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="idt" layoutX="53.0" layoutY="553.0" text="1" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="namat" layoutX="120.0" layoutY="553.0" prefHeight="23.0" prefWidth="183.0" text="Mr. Mirza Ukasyah" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="idtype" layoutX="385.0" layoutY="553.0" text="ID Card/KTP" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="numbert" layoutX="554.0" layoutY="553.0" prefHeight="23.0" prefWidth="110.0" text="1234567890" textFill="#505050">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="211.0" layoutX="695.0" layoutY="45.0">
+               <image>
+                  <Image url="@Assets/travelokepth.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="410.0" layoutY="633.0" onAction="#cetaktrain" style="-fx-background-color: #f96d01;" text="PRINT TICKET" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="20.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="not" fitHeight="41.0" fitWidth="45.0" layoutX="800.0" layoutY="541.0">
+               <image>
+                  <Image url="@Assets/false.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="yest" fitHeight="38.0" fitWidth="59.0" layoutX="796.0" layoutY="540.0" visible="false">
+               <image>
+                  <Image url="@Assets/true.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton layoutX="169.0" layoutY="633.0" onAction="#AksiOut" prefHeight="38.0" prefWidth="210.0" style="-fx-background-color: transparent; -fx-border-color: #17b701;" text="SIGN OUT" textFill="#17b701">
+         <font>
+            <Font name="Roboto" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="595.0" layoutY="633.0" onAction="#AksiKeluar" prefHeight="38.0" prefWidth="210.0" style="-fx-border-color: #d80a0a;" text="EXIT" textFill="#d80a0a">
+         <font>
+            <Font name="Roboto" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

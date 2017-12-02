@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a5b8a409-54f0-46f4-a23c-a36fe8ec9f47">
+	<property name="ireport.zoom" value="0.9090909090909127"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     tb_hotel.id_hotel AS tb_hotel_id_hotel,
+     tb_hotel.guestname AS tb_hotel_guestname,
+     tb_hotel.email AS tb_hotel_email,
+     tb_hotel.numbphone AS tb_hotel_numbphone,
+     tb_hotel.hotelnm AS tb_hotel_hotelnm ,
+     tb_hotel.hotelloc AS tb_hotel_hotelloc,
+     tb_hotel.checkout AS tb_hotel_checkout,
+     tb_hotel.checkin AS tb_hotel_checkin,
+     tb_hotel.room AS tb_hotel_room,
+     tb_hotel.guest AS tb_hotel_guest
+    
+     
+FROM
+     tb_hotel tb_hotel]]>
+	</queryString>
+	<field name="tb_hotel_id_hotel" class="java.lang.Object"/>
+	<field name="tb_hotel_guestname" class="java.lang.Object"/>
+	<field name="tb_hotel_email" class="java.lang.Object"/>
+	<field name="tb_hotel_numbphone" class="java.lang.Object"/>
+	<field name="tb_hotel_hotelnm" class="java.lang.Object"/>
+	<field name="tb_hotel_hotelloc" class="java.lang.Object"/>
+	<field name="tb_hotel_checkout" class="java.lang.Object"/>
+	<field name="tb_hotel_checkin" class="java.lang.Object"/>
+	<field name="tb_hotel_room" class="java.lang.Object"/>
+	<field name="tb_hotel_guest" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="559" y="0" width="262" height="62" forecolor="#1BA0E2" backcolor="#1BA0E2" uuid="2172c7ed-ca49-49c9-8f41-99d44ffcfc36"/>
+			</rectangle>
+			<image>
+				<reportElement x="620" y="9" width="200" height="41" uuid="1ccc50a6-c46c-4d0b-9878-3d6bb8dd2346"/>
+				<imageExpression><![CDATA["E:\\1.FILES\\1_MATERI SEKOLAH\\1.TUGAS SMK\\PBO\\netbeans\\Traveloke\\src\\traveloke\\Assets\\travelokepth.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="5" width="174" height="57" uuid="b77aed01-9d23-4816-887c-59f1fe349185"/>
+				<textElement>
+					<font fontName="Roboto Light" size="46"/>
+				</textElement>
+				<text><![CDATA[E-Ticket]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="9" width="159" height="26" forecolor="#AAAAAA" uuid="133cdd0b-6d04-4a3d-badd-86e7ca9ed919"/>
+				<textElement>
+					<font fontName="Roboto Light" size="19"/>
+				</textElement>
+				<text><![CDATA[Check-in Trouble ?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="35" width="271" height="26" forecolor="#000000" uuid="dca59ebc-4301-4879-b2b4-7f6a36d1a5eb"/>
+				<textElement>
+					<font fontName="Roboto" size="17"/>
+				</textElement>
+				<text><![CDATA[081-545-8900 / cs@traveloke.com]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="135" height="30" forecolor="#AAAAAA" uuid="b2cb1381-ba99-492b-94c0-5ed69a459969"/>
+				<textElement>
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<text><![CDATA[Booking Hotel]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="422" splitType="Stretch">
+			<rectangle>
+				<reportElement x="2" y="-3" width="800" height="2" forecolor="#505050" backcolor="#505050" uuid="2bf2a963-c6b6-4f8e-b6d4-c171a589a606"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="233" width="800" height="2" forecolor="#505050" backcolor="#505050" uuid="9e11af7c-9852-48f3-86a7-08b5799db25a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="303" width="800" height="2" forecolor="#505050" backcolor="#505050" uuid="9bb5f9d8-7064-4f18-8134-3e48e2e8d82a"/>
+			</rectangle>
+			<image>
+				<reportElement x="92" y="245" width="66" height="39" uuid="81a9d02f-a276-4290-9a44-af101f18c57e"/>
+				<imageExpression><![CDATA["E:\\1.FILES\\1_MATERI SEKOLAH\\1.TUGAS SMK\\PBO\\netbeans\\Traveloke\\src\\traveloke\\Assets\\business.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="158" y="245" width="247" height="39" forecolor="#505050" uuid="a58c640c-8eb5-487f-87c5-1ab731773090"/>
+				<textElement>
+					<font fontName="Roboto Light" size="16"/>
+				</textElement>
+				<text><![CDATA[Show your e-ticket and 
+passenger identity when check-in]]></text>
+			</staticText>
+			<image>
+				<reportElement x="444" y="245" width="66" height="39" uuid="d83d5d51-7a58-41e7-8154-63727745401f"/>
+				<imageExpression><![CDATA["E:\\1.FILES\\1_MATERI SEKOLAH\\1.TUGAS SMK\\PBO\\netbeans\\Traveloke\\src\\traveloke\\Assets\\time7.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="510" y="245" width="247" height="39" forecolor="#505050" uuid="39a2792b-0fff-4677-8744-df30a51080fa"/>
+				<textElement>
+					<font fontName="Roboto Light" size="16"/>
+				</textElement>
+				<text><![CDATA[Maximal check-in 90 minute 
+before departure schedule]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="577" y="58" width="209" height="41" forecolor="#AAAAAA" uuid="e2173a3c-67b8-4823-b140-a5047bb50570"/>
+				<textElement>
+					<font fontName="Roboto Light" size="32"/>
+				</textElement>
+				<text><![CDATA[Booking Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="620" y="116" width="125" height="53" forecolor="#1BA0E2" uuid="eb12affb-0f64-4568-b630-e11e473223ff"/>
+				<textElement>
+					<font fontName="Futura Bk BT" size="36"/>
+				</textElement>
+				<text><![CDATA[AB981]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="309" width="34" height="26" forecolor="#505050" uuid="99ee746e-9e7c-4a84-bf35-aaeb48c124e2"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="309" width="168" height="26" forecolor="#505050" uuid="2e5ed890-7e90-46a6-ae46-55828b41da41"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[Guest Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="309" width="74" height="26" forecolor="#505050" uuid="268ed7d3-092f-4e2c-8871-613b18bd6c5c"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="602" y="309" width="137" height="26" forecolor="#505050" uuid="4ca7aaed-9362-44f7-ad29-16fb3da4e22f"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[Phone Number]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="14" y="58" width="282" height="51" uuid="14eda7f9-9758-4dbf-ab0c-166b6467491b"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="35"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_hotel_hotelnm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="14" y="127" width="246" height="31" forecolor="#505050" uuid="6f023bf9-1759-4dfb-aa70-6f07639bb858"/>
+				<textElement>
+					<font fontName="Roboto Light" size="25"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_hotel_hotelloc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="4" y="341" width="34" height="28" forecolor="#505050" uuid="f99f525a-04bc-499e-a592-d49a592a0267"/>
+				<textElement textAlignment="Center">
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_hotel_id_hotel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="341" width="168" height="29" forecolor="#505050" uuid="eec0c3f1-4c81-4be7-858d-cce6854bd575"/>
+				<textElement textAlignment="Center">
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_hotel_guestname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="311" y="341" width="194" height="28" forecolor="#505050" uuid="fde34074-aa85-4207-805f-12e8c33b2f20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_hotel_email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="559" y="341" width="227" height="28" forecolor="#505050" uuid="40f77c13-e92a-45ea-9712-b00de2b8cc16"/>
+				<textElement textAlignment="Center">
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_hotel_numbphone}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="302" y="48" width="76" height="27" forecolor="#000000" uuid="2a544139-bd79-42f9-adeb-287f05876cd4"/>
+				<textElement>
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<text><![CDATA[Check in]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="302" y="89" width="87" height="27" forecolor="#000000" uuid="42b6335b-fb48-4cef-a72a-0df8b02cb7fe"/>
+				<textElement>
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<text><![CDATA[Check out]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="302" y="126" width="87" height="27" forecolor="#000000" uuid="b0611730-21ac-4362-8b4c-4dfc2e1fbe63"/>
+				<textElement>
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<text><![CDATA[Room]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="302" y="167" width="87" height="27" forecolor="#000000" uuid="04b83eff-0152-4d50-bb6c-9e3c2690b944"/>
+				<textElement>
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<text><![CDATA[Guest]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="400" y="89" width="190" height="27" uuid="c8fbb048-7423-428a-b515-835ba121a011"/>
+				<textElement>
+					<font fontName="Roboto" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_hotel_checkout}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="399" y="48" width="191" height="24" uuid="e95c4a81-e2ef-4088-87ad-de9f9857c095"/>
+				<textElement>
+					<font fontName="Roboto" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_hotel_checkin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="126" width="100" height="27" uuid="546473d1-7596-4e5c-a05f-8cb51da45a7a"/>
+				<textElement>
+					<font fontName="Roboto" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_hotel_room}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="167" width="99" height="27" uuid="f9dc81ea-be73-42d7-9dd8-17ff16b782bc"/>
+				<textElement>
+					<font fontName="Roboto" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_hotel_guest}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+</jasperReport>

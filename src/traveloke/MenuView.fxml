@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="traveloke.MenuViewController">
+   <children>
+      <AnchorPane layoutX="-7.0" layoutY="181.0" prefHeight="532.0" prefWidth="964.0" style="-fx-background-color: #fff;">
+         <children>
+            <ScrollPane layoutX="3.0" prefHeight="533.0" prefWidth="964.0">
+               <content>
+                  <AnchorPane prefHeight="1154.0" prefWidth="949.0" style="-fx-background-color: black;">
+                     <children>
+                        <Pane fx:id="flight" layoutX="3.0" prefHeight="1164.0" prefWidth="946.0" style="-fx-background-color: #e6eaed;" visible="false">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="46.0" layoutY="29.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ba0e2" height="136.0" layoutX="45.0" layoutY="30.0" stroke="#1ba0e2" strokeType="INSIDE" width="3.0" />
+                              <Label layoutX="72.0" layoutY="84.0" text="Flight Details">
+                                 <font>
+                                    <Font name="Roboto" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="272.0" layoutY="50.0" text="Departure Date">
+                                 <font>
+                                    <Font name="Roboto" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXDatePicker fx:id="date" defaultColor="#1ba0e2" layoutX="265.0" layoutY="94.0" prefHeight="31.0" prefWidth="162.0" />
+                              <Label layoutX="504.0" layoutY="49.0" prefHeight="24.0" prefWidth="101.0" text="Seat Class">
+                                 <font>
+                                    <Font name="Roboto" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="686.0" layoutY="74.0" prefHeight="24.0" prefWidth="150.0" text="No. of Passenger">
+                                 <font>
+                                    <Font name="Roboto" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXTextField editable="false" focusColor="#1ba0e2" layoutX="844.0" layoutY="67.0" maxWidth="116.0" minWidth="39.0" prefHeight="29.0" prefWidth="39.0" text="1">
+                                 <font>
+                                    <Font name="Roboto" size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <JFXComboBox fx:id="seatclass" layoutX="486.0" layoutY="93.0" prefHeight="35.0" prefWidth="134.0" />
+                              <Label layoutX="122.0" layoutY="185.0" text="Airline">
+                                 <font>
+                                    <Font name="Roboto Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="250.0" layoutY="185.0" text="Depart">
+                                 <font>
+                                    <Font name="Roboto Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="391.0" layoutY="185.0" text="Arrive">
+                                 <font>
+                                    <Font name="Roboto Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="516.0" layoutY="185.0" text="Duration">
+                                 <font>
+                                    <Font name="Roboto Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="659.0" layoutY="185.0" text="Price Per Person">
+                                 <font>
+                                    <Font name="Roboto Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="448.0" layoutY="56.0" orientation="VERTICAL" prefHeight="87.0" prefWidth="7.0" />
+                              <Separator layoutX="643.0" layoutY="51.0" orientation="VERTICAL" prefHeight="87.0" prefWidth="7.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="48.0" layoutY="234.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="245.0" layoutY="258.0" text="15.10">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="383.0" layoutY="258.0" text="17.35">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="501.0" layoutY="258.0" text="1h 25m">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="675.0" layoutY="259.0" text="Rp 526.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="29.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="671.0" layoutY="316.0" onAction="#flight1" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="239.0" layoutY="325.0" text="Surabaya" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="376.0" layoutY="323.0" text="Balikpapan" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="527.0" layoutY="324.0" text="Direct" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="57.0" fitWidth="97.0" layoutX="97.0" layoutY="256.0">
+                                 <image>
+                                    <Image url="@Assets/garuda.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="115.0" layoutY="324.0" text="Garuda" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="48.0" layoutY="384.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="245.0" layoutY="408.0" text="16.40">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="383.0" layoutY="408.0" text="19.40">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="501.0" layoutY="408.0" text="2h 0m">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="675.0" layoutY="409.0" text="Rp 1.307.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="29.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="671.0" layoutY="466.0" onAction="#flight2" prefHeight="38.0" prefWidth="181.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="239.0" layoutY="475.0" text="Jakarta" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="396.0" layoutY="473.0" text="Bali" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="527.0" layoutY="474.0" text="Direct" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="115.0" layoutY="474.0" text="Citilink" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="48.0" layoutY="534.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="245.0" layoutY="558.0" text="17.55">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="383.0" layoutY="558.0" text="21.45">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="501.0" layoutY="558.0" text="2h 50m">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="675.0" layoutY="559.0" text="Rp 1.646.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="29.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="671.0" layoutY="616.0" onAction="#flight3" prefHeight="38.0" prefWidth="184.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="239.0" layoutY="625.0" text="Jakarta" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="376.0" layoutY="623.0" text="Medan" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="527.0" layoutY="624.0" text="Direct" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="115.0" layoutY="624.0" text="Air Asia" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="48.0" layoutY="684.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="245.0" layoutY="708.0" text="15.10">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="383.0" layoutY="708.0" text="17.35">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="501.0" layoutY="708.0" text="2h 0m">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="675.0" layoutY="709.0" text="Rp 626.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="29.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="671.0" layoutY="766.0" onAction="#flight4" prefHeight="38.0" prefWidth="185.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="239.0" layoutY="775.0" text="Malang" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="376.0" layoutY="773.0" text="Kupang" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="527.0" layoutY="774.0" text="Direct" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="57.0" fitWidth="97.0" layoutX="97.0" layoutY="706.0">
+                                 <image>
+                                    <Image url="@Assets/garuda.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="115.0" layoutY="774.0" text="Garuda" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="48.0" layoutY="834.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="245.0" layoutY="858.0" text="20.45">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="383.0" layoutY="858.0" text="00.35">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="501.0" layoutY="858.0" text="1h 50m">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="675.0" layoutY="859.0" text="Rp 519.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="29.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="671.0" layoutY="916.0" onAction="#flight5" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="259.0" layoutY="925.0" text="Bali" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="376.0" layoutY="923.0" text="Jakarta" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="527.0" layoutY="924.0" text="Direct" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="115.0" layoutY="924.0" text="Citilink" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="48.0" layoutY="984.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="245.0" layoutY="1008.0" text="12.05">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="383.0" layoutY="1008.0" text="14.35">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="501.0" layoutY="1008.0" text="1h 30m">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="675.0" layoutY="1009.0" text="Rp 558.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="29.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="671.0" layoutY="1066.0" onAction="#flight6" prefHeight="38.0" prefWidth="194.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label layoutX="239.0" layoutY="1075.0" text="Surabaya" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="376.0" layoutY="1073.0" text="Balikpapan" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="527.0" layoutY="1074.0" text="Direct" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="115.0" layoutY="1074.0" text="Air Asia" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="54.0" fitWidth="122.0" layoutX="93.0" layoutY="555.0">
+                                 <image>
+                                    <Image url="@Assets/airasia.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="54.0" fitWidth="122.0" layoutX="93.0" layoutY="1006.0">
+                                 <image>
+                                    <Image url="@Assets/airasia.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="60.0" fitWidth="135.0" layoutX="85.0" layoutY="410.0">
+                                 <image>
+                                    <Image url="@Assets/citilink.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="60.0" fitWidth="135.0" layoutX="80.0" layoutY="857.0">
+                                 <image>
+                                    <Image url="@Assets/citilink.png" />
+                                 </image>
+                              </ImageView>
+                           </children></Pane>
+                        <Pane fx:id="hotel" layoutX="3.0" layoutY="-1.0" prefHeight="1172.0" prefWidth="946.0" style="-fx-background-color: #e6eaed;">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="46.0" layoutY="29.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ba0e2" height="136.0" layoutX="44.0" layoutY="29.0" stroke="#1ba0e2" strokeType="INSIDE" width="3.0" />
+                              <Label layoutX="80.0" layoutY="83.0" text="Hotel Details">
+                                 <font>
+                                    <Font name="Roboto" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="225.0" layoutX="44.0" layoutY="192.0" stroke="WHITE" strokeType="INSIDE" width="866.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <ImageView fitHeight="225.0" fitWidth="198.0" layoutX="44.0" layoutY="192.0">
+                                 <image>
+                                    <Image url="@Assets/3.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="283.0" layoutY="48.0" text="Check In">
+                                 <font>
+                                    <Font name="Roboto" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXDatePicker fx:id="datein" defaultColor="#1ba0e2" layoutX="274.0" layoutY="82.0" prefHeight="40.0" prefWidth="162.0" />
+                              <Label layoutX="486.0" layoutY="48.0" text="Check Out">
+                                 <font>
+                                    <Font name="Roboto" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXDatePicker fx:id="dateout" defaultColor="#1ba0e2" layoutX="477.0" layoutY="82.0" prefHeight="40.0" prefWidth="158.0" />
+                              <Label layoutX="693.0" layoutY="50.0" text="Guest">
+                                 <font>
+                                    <Font name="Roboto" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="693.0" layoutY="100.0" text="Room">
+                                 <font>
+                                    <Font name="Roboto" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="656.0" layoutY="60.0" orientation="VERTICAL" prefHeight="72.0" prefWidth="7.0" />
+                              <JFXComboBox fx:id="guest" layoutX="778.0" layoutY="50.0" />
+                              <JFXComboBox fx:id="room" layoutX="780.0" layoutY="100.0" />
+                              <Label layoutX="291.0" layoutY="212.0" text="Takes Mansion Hotel">
+                                 <font>
+                                    <Font name="Roboto Light" size="27.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="282.0" layoutY="255.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="320.0" layoutY="255.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="358.0" layoutY="255.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="394.0" layoutY="255.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="290.0" layoutY="306.0">
+                                 <image>
+                                    <Image url="@Assets/location.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="337.0" layoutY="312.0" text="Kuta, Bali" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="298.0" layoutY="369.0" text="Pay at Hotel Available" textFill="#1ba0e2">
+                                 <font>
+                                    <Font name="Roboto" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="687.0" layoutY="252.0" text="Rp 598.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="33.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="681.0" layoutY="326.0" onAction="#hotel1" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="225.0" layoutX="44.0" layoutY="432.0" stroke="WHITE" strokeType="INSIDE" width="866.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="291.0" layoutY="452.0" text="Borobudur Hotel">
+                                 <font>
+                                    <Font name="Roboto Light" size="27.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="282.0" layoutY="495.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="320.0" layoutY="495.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="358.0" layoutY="495.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="394.0" layoutY="495.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="290.0" layoutY="546.0">
+                                 <image>
+                                    <Image url="@Assets/location.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="337.0" layoutY="552.0" text="Malang, East Java" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="298.0" layoutY="609.0" text="Pay at Hotel Available" textFill="#1ba0e2">
+                                 <font>
+                                    <Font name="Roboto" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="687.0" layoutY="492.0" text="Rp 956.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="33.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="681.0" layoutY="566.0" onAction="#hotel2" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="225.0" layoutX="44.0" layoutY="672.0" stroke="WHITE" strokeType="INSIDE" width="866.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="291.0" layoutY="692.0" text="Merlynn Park Hotel">
+                                 <font>
+                                    <Font name="Roboto Light" size="27.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="282.0" layoutY="735.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="320.0" layoutY="735.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="358.0" layoutY="735.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="394.0" layoutY="735.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="290.0" layoutY="786.0">
+                                 <image>
+                                    <Image url="@Assets/location.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="337.0" layoutY="792.0" text="Gambir, Jakarta" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="298.0" layoutY="849.0" text="Pay at Hotel Available" textFill="#1ba0e2">
+                                 <font>
+                                    <Font name="Roboto" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="687.0" layoutY="732.0" text="Rp 618.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="33.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="681.0" layoutY="806.0" onAction="#hotel3" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="225.0" layoutX="44.0" layoutY="912.0" stroke="WHITE" strokeType="INSIDE" width="866.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="291.0" layoutY="932.0" text="Best Western Premiere">
+                                 <font>
+                                    <Font name="Roboto Light" size="27.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="282.0" layoutY="975.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="320.0" layoutY="975.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="358.0" layoutY="975.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="51.0" layoutX="394.0" layoutY="975.0">
+                                 <image>
+                                    <Image url="@Assets/star.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="290.0" layoutY="1026.0">
+                                 <image>
+                                    <Image url="@Assets/location.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="337.0" layoutY="1032.0" text="Cawang, Jakarta" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="298.0" layoutY="1089.0" text="Pay at Hotel Available" textFill="#1ba0e2">
+                                 <font>
+                                    <Font name="Roboto" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="687.0" layoutY="972.0" text="Rp 570.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="33.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="681.0" layoutY="1046.0" onAction="#hotel4" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <ImageView fitHeight="224.0" fitWidth="200.0" layoutX="45.0" layoutY="432.0">
+                                 <image>
+                                    <Image url="@Assets/2.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="226.0" fitWidth="200.0" layoutX="44.0" layoutY="672.0">
+                                 <image>
+                                    <Image url="@Assets/1.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="224.0" fitWidth="200.0" layoutX="45.0" layoutY="913.0">
+                                 <image>
+                                    <Image url="@Assets/4.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children></Pane>
+                        <Pane fx:id="train" layoutX="3.0" prefHeight="1172.0" prefWidth="946.0" style="-fx-background-color: #e6eaed;" visible="false">
+                           <children>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="46.0" layoutY="29.0" stroke="WHITE" strokeType="INSIDE" width="871.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1ba0e2" height="136.0" layoutX="44.0" layoutY="29.0" stroke="#1ba0e2" strokeType="INSIDE" width="3.0" />
+                              <Label layoutX="98.0" layoutY="79.0" text="Train Details">
+                                 <font>
+                                    <Font name="Roboto" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="292.0" layoutY="54.0" text="Departure Date">
+                                 <font>
+                                    <Font name="Roboto" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXDatePicker fx:id="traindate" defaultColor="#1ba0e2" layoutX="276.0" layoutY="94.0" prefHeight="31.0" prefWidth="182.0" />
+                              <Separator layoutX="470.0" layoutY="53.0" orientation="VERTICAL" prefHeight="80.0" prefWidth="2.0" />
+                              <Label layoutX="510.0" layoutY="51.0" text="Adult">
+                                 <font>
+                                    <Font name="Roboto" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="706.0" layoutY="50.0" text="Infant">
+                                 <font>
+                                    <Font name="Roboto" size="19.0" />
+                                 </font>
+                              </Label>
+                              <JFXComboBox fx:id="adult" layoutX="595.0" layoutY="51.0" />
+                              <JFXComboBox fx:id="infant" layoutX="793.0" layoutY="49.0" />
+                              <JFXRadioButton layoutX="511.0" layoutY="107.0" text="One -way">
+                                 <font>
+                                    <Font name="Roboto" size="19.0" />
+                                 </font>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="rdbutton" />
+                                 </toggleGroup>
+                              </JFXRadioButton>
+                              <JFXRadioButton layoutX="641.0" layoutY="107.0" text="Return" toggleGroup="$rdbutton">
+                                 <font>
+                                    <Font name="Roboto" size="19.0" />
+                                 </font>
+                              </JFXRadioButton>
+                              <Label layoutX="86.0" layoutY="189.0" text="Train Name">
+                                 <font>
+                                    <Font name="Roboto Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="253.0" layoutY="188.0" text="Depart">
+                                 <font>
+                                    <Font name="Roboto Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="399.0" layoutY="187.0" text="Arrive">
+                                 <font>
+                                    <Font name="Roboto Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="531.0" layoutY="188.0" text="Duration">
+                                 <font>
+                                    <Font name="Roboto Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="688.0" layoutY="188.0" text="Price Per Person">
+                                 <font>
+                                    <Font name="Roboto Light" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="50.0" layoutY="238.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="255.0" layoutY="258.0" text="01.45">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="393.0" layoutY="258.0" text="05.43">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="531.0" layoutY="278.0" text="3h 58m">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="685.0" layoutY="259.0" text="Rp 365.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="29.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="681.0" layoutY="316.0" onAction="#train1" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="254.0" layoutY="306.0" text="Semarang &#10;Tawang" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="375.0" layoutY="299.0" prefHeight="55.0" prefWidth="109.0" text="Surabaya &#10;Pasar Turi" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="355.0" layoutY="255.0" orientation="VERTICAL" prefHeight="61.0" prefWidth="7.0" />
+                              <Separator layoutX="505.0" layoutY="255.0" orientation="VERTICAL" prefHeight="61.0" prefWidth="7.0" />
+                              <Label layoutX="95.0" layoutY="265.0" text="Sembrani">
+                                 <font>
+                                    <Font name="Roboto Medium" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="306.0" text="Executive (A)" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="48.0" layoutY="390.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="245.0" layoutY="414.0" text="15.45">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="383.0" layoutY="414.0" text="07.45">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="521.0" layoutY="434.0" text="15h 20m">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="675.0" layoutY="415.0" text="Rp 250.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="29.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="681.0" layoutY="472.0" onAction="#train2" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="244.0" layoutY="462.0" text="Bandung" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="458.0" prefHeight="26.0" prefWidth="109.0" text="Malang" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="345.0" layoutY="411.0" orientation="VERTICAL" prefHeight="61.0" prefWidth="7.0" />
+                              <Separator layoutX="495.0" layoutY="411.0" orientation="VERTICAL" prefHeight="61.0" prefWidth="7.0" />
+                              <Label layoutX="95.0" layoutY="421.0" text="Malabar">
+                                 <font>
+                                    <Font name="Roboto Medium" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="462.0" text="Economy (C)" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="48.0" layoutY="540.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="245.0" layoutY="564.0" text="08.30">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="383.0" layoutY="564.0" text="16.25">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="521.0" layoutY="584.0" text="7h 39m">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="675.0" layoutY="565.0" text="Rp 380.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="29.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="681.0" layoutY="622.0" onAction="#train3" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="244.0" layoutY="612.0" text="Gambir" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="607.0" prefHeight="26.0" prefWidth="109.0" text="Yogyakarta" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="345.0" layoutY="561.0" orientation="VERTICAL" prefHeight="61.0" prefWidth="7.0" />
+                              <Separator layoutX="495.0" layoutY="561.0" orientation="VERTICAL" prefHeight="61.0" prefWidth="7.0" />
+                              <Label layoutX="95.0" layoutY="571.0" text="Taksaka">
+                                 <font>
+                                    <Font name="Roboto Medium" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="612.0" text="Executive (A)" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="48.0" layoutY="690.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="245.0" layoutY="714.0" text="11.45">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="383.0" layoutY="714.0" text="14.03">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="521.0" layoutY="734.0" text="2h 18m">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="675.0" layoutY="715.0" text="Rp 35.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="29.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="681.0" layoutY="772.0" onAction="#train4" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="244.0" layoutY="762.0" text="Malang" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="755.0" prefHeight="55.0" prefWidth="109.0" text="Surabaya &#10;Pasar Turi" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="345.0" layoutY="711.0" orientation="VERTICAL" prefHeight="61.0" prefWidth="7.0" />
+                              <Separator layoutX="495.0" layoutY="711.0" orientation="VERTICAL" prefHeight="61.0" prefWidth="7.0" />
+                              <Label layoutX="95.0" layoutY="721.0" text="Jayabaya">
+                                 <font>
+                                    <Font name="Roboto Medium" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="762.0" text="Economy (C)" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="48.0" layoutY="840.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="245.0" layoutY="864.0" text="13.30">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="383.0" layoutY="864.0" text="20.22">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="521.0" layoutY="884.0" text="6h 52m">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="675.0" layoutY="865.0" text="Rp 430.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="29.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="681.0" layoutY="922.0" onAction="#train5" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="244.0" layoutY="912.0" text="Malang" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="905.0" prefHeight="55.0" prefWidth="109.0" text="Yogyakarta" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="345.0" layoutY="861.0" orientation="VERTICAL" prefHeight="61.0" prefWidth="7.0" />
+                              <Separator layoutX="495.0" layoutY="861.0" orientation="VERTICAL" prefHeight="61.0" prefWidth="7.0" />
+                              <Label layoutX="95.0" layoutY="871.0" text="Gajayana">
+                                 <font>
+                                    <Font name="Roboto Medium" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="912.0" text="Executive (H)" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="136.0" layoutX="48.0" layoutY="990.0" stroke="WHITE" strokeType="INSIDE" width="864.0">
+                                 <effect>
+                                    <DropShadow color="#aaaaaa" height="6.0" radius="2.5" width="6.0" />
+                                 </effect>
+                              </Rectangle>
+                              <Label layoutX="245.0" layoutY="1014.0" text="00.45">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="383.0" layoutY="1014.0" text="10.05">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="521.0" layoutY="1034.0" text="9h 20m">
+                                 <font>
+                                    <Font name="Roboto Light" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="675.0" layoutY="1015.0" text="Rp 210.000" textFill="#f96d01">
+                                 <font>
+                                    <Font name="Roboto Medium" size="29.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton layoutX="681.0" layoutY="1072.0" onAction="#train6" prefHeight="38.0" prefWidth="177.0" style="-fx-background-color: #f96d01;" text="Choose" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="244.0" layoutY="1062.0" text="Semarang &#10;Tawang" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="365.0" layoutY="1055.0" prefHeight="55.0" prefWidth="109.0" text="Malang" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="345.0" layoutY="1011.0" orientation="VERTICAL" prefHeight="61.0" prefWidth="7.0" />
+                              <Separator layoutX="495.0" layoutY="1011.0" orientation="VERTICAL" prefHeight="61.0" prefWidth="7.0" />
+                              <Label layoutX="95.0" layoutY="1021.0" text="Majapahit">
+                                 <font>
+                                    <Font name="Roboto Medium" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="1062.0" text="Executive (P)" textAlignment="CENTER" textFill="#aaaaaa">
+                                 <font>
+                                    <Font name="Roboto Light" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children></Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Pane prefHeight="187.0" prefWidth="956.0" style="-fx-background-color: #fff;">
+         <children>
+            <ImageView fitHeight="186.0" fitWidth="954.0">
+               <image>
+                  <Image url="@Assets/cover.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="CENTER" layoutX="400.0" layoutY="151.0" onAction="#AksiFlight" prefHeight="34.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Flight" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="18.0" />
+               </font></JFXButton>
+            <JFXButton alignment="CENTER" layoutX="577.0" layoutY="151.0" onAction="#AksiHotel" prefHeight="34.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Hotel" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="18.0" />
+               </font></JFXButton>
+            <JFXButton alignment="CENTER" layoutX="754.0" layoutY="151.0" onAction="#AksiTrain" prefHeight="34.0" prefWidth="177.0" style="-fx-background-color: transparent;" text="Train" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="18.0" />
+               </font></JFXButton>
+            <Label fx:id="idnama" layoutX="184.0" layoutY="41.0" text="Mirza Ukasyah" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="32.0" />
+               </font>
+            </Label>
+            <Line fx:id="lflight" endX="77.0" layoutX="500.0" layoutY="185.0" startX="-100.0" stroke="#1ba0e2" strokeWidth="3.0" />
+            <Line fx:id="lhotel" endX="75.0" layoutX="680.0" layoutY="185.0" startX="-100.0" stroke="#1ba0e2" strokeWidth="3.0" />
+            <Line fx:id="ltrain" endX="73.0" layoutX="858.0" layoutY="185.0" startX="-100.0" stroke="#1ba0e2" strokeWidth="3.0" />
+            <Label layoutX="187.0" layoutY="94.0" text="Rp " textFill="WHITE">
+               <font>
+                  <Font name="Roboto Black" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="urbalance" layoutX="227.0" layoutY="94.0" text="500000" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Black" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="mirza" fitHeight="125.0" fitWidth="125.0" layoutX="35.0" layoutY="28.0">
+               <image>
+                  <Image url="@Assets/mirza.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bonzie" fitHeight="125.0" fitWidth="125.0" layoutX="35.0" layoutY="28.0" visible="false">
+               <image>
+                  <Image url="@Assets/bonbon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="anon" fitHeight="125.0" fitWidth="125.0" layoutX="35.0" layoutY="28.0" visible="false">
+               <image>
+                  <Image url="@Assets/unuser.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="854.0" layoutY="14.0" onAction="#out" style="-fx-background-color: #d80a0a;" text="Sign Out" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a5b8a409-54f0-46f4-a23c-a36fe8ec9f47">
+	<property name="ireport.zoom" value="0.9090909090909137"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     tb_flight.id_flight AS tb_flight_id_flight,
+     tb_flight.title AS tb_flight_title,
+     tb_flight.nmpass AS tb_flight_nmpass,
+     tb_flight.baggage AS tb_flight_baggage,
+     tb_flight.datebook AS tb_flight_datebook,
+     tb_flight.airline AS tb_flight_airline,
+     tb_flight.tarrive AS tb_flight_tarrive,
+     tb_flight.tdepart AS tb_flight_tdepart,
+     tb_flight.karrive AS tb_flight_karrive,
+     tb_flight.kdepart AS tb_flight_kdepart,
+     tb_flight.dob AS tb_flight_dob
+FROM
+     tb_flight tb_flight]]>
+	</queryString>
+	<field name="tb_flight_id_flight" class="java.lang.Object"/>
+	<field name="tb_flight_title" class="java.lang.Object"/>
+	<field name="tb_flight_nmpass" class="java.lang.Object"/>
+	<field name="tb_flight_baggage" class="java.lang.Object"/>
+	<field name="tb_flight_datebook" class="java.lang.Object"/>
+	<field name="tb_flight_airline" class="java.lang.Object"/>
+	<field name="tb_flight_tarrive" class="java.lang.Object"/>
+	<field name="tb_flight_tdepart" class="java.lang.Object"/>
+	<field name="tb_flight_karrive" class="java.lang.Object"/>
+	<field name="tb_flight_kdepart" class="java.lang.Object"/>
+	<field name="tb_flight_dob" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="559" y="0" width="262" height="62" forecolor="#1BA0E2" backcolor="#1BA0E2" uuid="2172c7ed-ca49-49c9-8f41-99d44ffcfc36"/>
+			</rectangle>
+			<image>
+				<reportElement x="620" y="9" width="200" height="41" uuid="1ccc50a6-c46c-4d0b-9878-3d6bb8dd2346"/>
+				<imageExpression><![CDATA["E:\\1.FILES\\1_MATERI SEKOLAH\\1.TUGAS SMK\\PBO\\netbeans\\Traveloke\\src\\traveloke\\Assets\\travelokepth.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="5" width="174" height="57" uuid="b77aed01-9d23-4816-887c-59f1fe349185"/>
+				<textElement>
+					<font fontName="Roboto Light" size="46"/>
+				</textElement>
+				<text><![CDATA[E-Ticket]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="25" width="159" height="26" forecolor="#AAAAAA" uuid="133cdd0b-6d04-4a3d-badd-86e7ca9ed919"/>
+				<textElement>
+					<font fontName="Roboto Light" size="19"/>
+				</textElement>
+				<text><![CDATA[Check-in Trouble ?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="51" width="271" height="26" forecolor="#000000" uuid="dca59ebc-4301-4879-b2b4-7f6a36d1a5eb"/>
+				<textElement>
+					<font fontName="Roboto" size="17"/>
+				</textElement>
+				<text><![CDATA[081-545-8900 / cs@traveloke.com]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="135" height="30" forecolor="#AAAAAA" uuid="b2cb1381-ba99-492b-94c0-5ed69a459969"/>
+				<textElement>
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<text><![CDATA[Departure Flight]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="422" splitType="Stretch">
+			<rectangle>
+				<reportElement x="2" y="-3" width="800" height="2" forecolor="#505050" backcolor="#505050" uuid="2bf2a963-c6b6-4f8e-b6d4-c171a589a606"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="233" width="800" height="2" forecolor="#505050" backcolor="#505050" uuid="9e11af7c-9852-48f3-86a7-08b5799db25a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="303" width="800" height="2" forecolor="#505050" backcolor="#505050" uuid="9bb5f9d8-7064-4f18-8134-3e48e2e8d82a"/>
+			</rectangle>
+			<image>
+				<reportElement x="92" y="245" width="66" height="39" uuid="81a9d02f-a276-4290-9a44-af101f18c57e"/>
+				<imageExpression><![CDATA["E:\\1.FILES\\1_MATERI SEKOLAH\\1.TUGAS SMK\\PBO\\netbeans\\Traveloke\\src\\traveloke\\Assets\\business.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="158" y="245" width="247" height="39" forecolor="#505050" uuid="a58c640c-8eb5-487f-87c5-1ab731773090"/>
+				<textElement>
+					<font fontName="Roboto Light" size="16"/>
+				</textElement>
+				<text><![CDATA[Show your e-ticket and 
+passenger identity when check-in]]></text>
+			</staticText>
+			<image>
+				<reportElement x="444" y="245" width="66" height="39" uuid="d83d5d51-7a58-41e7-8154-63727745401f"/>
+				<imageExpression><![CDATA["E:\\1.FILES\\1_MATERI SEKOLAH\\1.TUGAS SMK\\PBO\\netbeans\\Traveloke\\src\\traveloke\\Assets\\time7.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="510" y="245" width="247" height="39" forecolor="#505050" uuid="39a2792b-0fff-4677-8744-df30a51080fa"/>
+				<textElement>
+					<font fontName="Roboto Light" size="16"/>
+				</textElement>
+				<text><![CDATA[Maximal check-in 90 minute 
+before departure schedule]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="169" width="183" height="30" forecolor="#AAAAAA" uuid="e01ad38e-ddf4-4830-9c7c-69b272f4ed45"/>
+				<textElement textAlignment="Center">
+					<font fontName="Roboto Light" size="20"/>
+				</textElement>
+				<text><![CDATA[Subclass Economy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="48" y="108" width="133" height="51" forecolor="#000000" uuid="0f912cc3-26d0-4af6-bd9c-9c1f86e941a0"/>
+				<textElement textAlignment="Center">
+					<font fontName="Roboto Medium" size="30"/>
+				</textElement>
+				<text><![CDATA[ID-6451]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="48" y="58" width="133" height="51" uuid="3cf55c97-8bf5-48cb-ad9f-6f1cddd03f2a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Roboto Medium" size="36"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_flight_airline}]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement mode="Opaque" x="348" y="83" width="11" height="12" forecolor="#323232" backcolor="#323232" uuid="139fa722-9b3e-4deb-972f-d23035559309"/>
+			</ellipse>
+			<ellipse>
+				<reportElement mode="Opaque" x="348" y="165" width="11" height="12" forecolor="#323232" backcolor="#323232" uuid="a552babd-2682-4ff3-bdfa-eff5e8b4d10e"/>
+			</ellipse>
+			<rectangle>
+				<reportElement x="353" y="94" width="1" height="75" forecolor="#323232" backcolor="#323232" uuid="e7c38edf-4f1d-463a-a820-4bcab6764ddd"/>
+			</rectangle>
+			<textField>
+				<reportElement x="270" y="73" width="65" height="27" forecolor="#323232" uuid="24a8b523-b00b-4cee-8ed2-4bff0b4cf2f5"/>
+				<textElement>
+					<font fontName="Roboto Black" size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_flight_tdepart}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="159" width="65" height="27" uuid="2a001b11-1cc5-435d-a5e3-38ffe6970281"/>
+				<textElement>
+					<font fontName="Roboto Black" size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_flight_tarrive}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="159" width="139" height="27" forecolor="#323232" uuid="4b5be26f-eaf4-4248-abe6-97bbecb000dc"/>
+				<textElement>
+					<font fontName="Roboto Black" size="22"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_flight_karrive}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="374" y="73" width="136" height="26" forecolor="#323232" uuid="ddf24ea7-782a-4876-b7c8-95f37cd495ff"/>
+				<textElement>
+					<font fontName="Roboto Black" size="22"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_flight_kdepart}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="20" width="260" height="34" uuid="5a4bb92e-389f-4e45-a87a-d0083d99b44b"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="22"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_flight_datebook}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="577" y="58" width="209" height="41" forecolor="#AAAAAA" uuid="e2173a3c-67b8-4823-b140-a5047bb50570"/>
+				<textElement>
+					<font fontName="Roboto Light" size="32"/>
+				</textElement>
+				<text><![CDATA[Booking Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="620" y="116" width="125" height="53" forecolor="#1BA0E2" uuid="eb12affb-0f64-4568-b630-e11e473223ff"/>
+				<textElement>
+					<font fontName="Futura Bk BT" size="36"/>
+				</textElement>
+				<text><![CDATA[AB981]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="309" width="34" height="26" forecolor="#505050" uuid="99ee746e-9e7c-4a84-bf35-aaeb48c124e2"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="309" width="168" height="26" forecolor="#505050" uuid="2e5ed890-7e90-46a6-ae46-55828b41da41"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[Passenger Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="376" y="309" width="51" height="26" forecolor="#505050" uuid="268ed7d3-092f-4e2c-8871-613b18bd6c5c"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[DOB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="542" y="309" width="99" height="26" forecolor="#505050" uuid="4ca7aaed-9362-44f7-ad29-16fb3da4e22f"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[Baggage]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="699" y="309" width="99" height="26" forecolor="#505050" uuid="20ead6d1-2e9d-45e7-8fab-349cd531c9af"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[Insurance]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="14" y="341" width="34" height="30" forecolor="#505050" uuid="aa4bb495-18c8-4e1f-8537-599a47832d33"/>
+				<textElement>
+					<font fontName="Roboto" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_flight_id_flight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="93" y="341" width="42" height="30" forecolor="#505050" uuid="aac3ce20-52a1-4391-873d-07deab5a90ab"/>
+				<textElement>
+					<font fontName="Roboto" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_flight_title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="341" width="187" height="30" forecolor="#505050" uuid="bd7e5520-441e-48cb-8085-06e9249c6c06"/>
+				<textElement>
+					<font fontName="Roboto" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_flight_nmpass}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="345" y="341" width="132" height="30" forecolor="#505050" uuid="d52fe2cc-042f-4007-8854-0f547d607ad5"/>
+				<textElement>
+					<font fontName="Roboto" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_flight_dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="507" y="341" width="195" height="30" forecolor="#323232" uuid="c46396e1-9389-4776-9189-47c227641fb5"/>
+				<textElement>
+					<font fontName="Roboto" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_flight_baggage}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+</jasperReport>

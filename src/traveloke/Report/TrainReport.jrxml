@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a5b8a409-54f0-46f4-a23c-a36fe8ec9f47">
+	<property name="ireport.zoom" value="0.9090909090909127"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     tb_train.id_train AS tb_train_id_train,
+     tb_train.title AS tb_train_title,
+     tb_train.nmpass AS tb_train_nmpass,
+     tb_train.IDtype AS tb_train_IDtype,
+     tb_train.IDnumb AS tb_train_IDnumb,
+     tb_train.departure AS tb_train_departure,
+     tb_train.trainnm AS tb_train_trainnm,
+     tb_train.trclass AS tb_train_trclass,
+     tb_train.tarrive AS tb_train_tarrive,
+     tb_train.tdepart AS tb_train_tdepart,
+     tb_train.karrive AS tb_train_karrive,
+     tb_train.kdepart AS tb_train_kdepart
+     
+FROM
+     tb_train tb_train]]>
+	</queryString>
+	<field name="tb_train_id_train" class="java.lang.Object"/>
+	<field name="tb_train_title" class="java.lang.Object"/>
+	<field name="tb_train_nmpass" class="java.lang.Object"/>
+	<field name="tb_train_IDtype" class="java.lang.Object"/>
+	<field name="tb_train_IDnumb" class="java.lang.Object"/>
+	<field name="tb_train_departure" class="java.lang.Object"/>
+	<field name="tb_train_trainnm" class="java.lang.Object"/>
+	<field name="tb_train_trclass" class="java.lang.Object"/>
+	<field name="tb_train_tarrive" class="java.lang.Object"/>
+	<field name="tb_train_tdepart" class="java.lang.Object"/>
+	<field name="tb_train_karrive" class="java.lang.Object"/>
+	<field name="tb_train_kdepart" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="559" y="0" width="262" height="62" forecolor="#1BA0E2" backcolor="#1BA0E2" uuid="2172c7ed-ca49-49c9-8f41-99d44ffcfc36"/>
+			</rectangle>
+			<image>
+				<reportElement x="620" y="9" width="200" height="41" uuid="1ccc50a6-c46c-4d0b-9878-3d6bb8dd2346"/>
+				<imageExpression><![CDATA["E:\\1.FILES\\1_MATERI SEKOLAH\\1.TUGAS SMK\\PBO\\netbeans\\Traveloke\\src\\traveloke\\Assets\\travelokepth.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="5" width="174" height="57" uuid="b77aed01-9d23-4816-887c-59f1fe349185"/>
+				<textElement>
+					<font fontName="Roboto Light" size="46"/>
+				</textElement>
+				<text><![CDATA[E-Ticket]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="9" width="159" height="26" forecolor="#AAAAAA" uuid="133cdd0b-6d04-4a3d-badd-86e7ca9ed919"/>
+				<textElement>
+					<font fontName="Roboto Light" size="19"/>
+				</textElement>
+				<text><![CDATA[Check-in Trouble ?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="206" y="35" width="271" height="26" forecolor="#000000" uuid="dca59ebc-4301-4879-b2b4-7f6a36d1a5eb"/>
+				<textElement>
+					<font fontName="Roboto" size="17"/>
+				</textElement>
+				<text><![CDATA[081-545-8900 / cs@traveloke.com]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="135" height="30" forecolor="#AAAAAA" uuid="b2cb1381-ba99-492b-94c0-5ed69a459969"/>
+				<textElement>
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<text><![CDATA[Departure Train]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="422" splitType="Stretch">
+			<rectangle>
+				<reportElement x="2" y="-3" width="800" height="2" forecolor="#505050" backcolor="#505050" uuid="2bf2a963-c6b6-4f8e-b6d4-c171a589a606"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="233" width="800" height="2" forecolor="#505050" backcolor="#505050" uuid="9e11af7c-9852-48f3-86a7-08b5799db25a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="303" width="800" height="2" forecolor="#505050" backcolor="#505050" uuid="9bb5f9d8-7064-4f18-8134-3e48e2e8d82a"/>
+			</rectangle>
+			<image>
+				<reportElement x="92" y="245" width="66" height="39" uuid="81a9d02f-a276-4290-9a44-af101f18c57e"/>
+				<imageExpression><![CDATA["E:\\1.FILES\\1_MATERI SEKOLAH\\1.TUGAS SMK\\PBO\\netbeans\\Traveloke\\src\\traveloke\\Assets\\business.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="158" y="245" width="247" height="39" forecolor="#505050" uuid="a58c640c-8eb5-487f-87c5-1ab731773090"/>
+				<textElement>
+					<font fontName="Roboto Light" size="16"/>
+				</textElement>
+				<text><![CDATA[Show your e-ticket and 
+passenger identity when check-in]]></text>
+			</staticText>
+			<image>
+				<reportElement x="444" y="245" width="66" height="39" uuid="d83d5d51-7a58-41e7-8154-63727745401f"/>
+				<imageExpression><![CDATA["E:\\1.FILES\\1_MATERI SEKOLAH\\1.TUGAS SMK\\PBO\\netbeans\\Traveloke\\src\\traveloke\\Assets\\time7.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="510" y="245" width="247" height="39" forecolor="#505050" uuid="39a2792b-0fff-4677-8744-df30a51080fa"/>
+				<textElement>
+					<font fontName="Roboto Light" size="16"/>
+				</textElement>
+				<text><![CDATA[Maximal check-in 90 minute 
+before departure schedule]]></text>
+			</staticText>
+			<ellipse>
+				<reportElement mode="Opaque" x="345" y="73" width="19" height="21" forecolor="#323232" backcolor="#323232" uuid="139fa722-9b3e-4deb-972f-d23035559309"/>
+			</ellipse>
+			<ellipse>
+				<reportElement mode="Opaque" x="345" y="164" width="19" height="21" forecolor="#323232" backcolor="#323232" uuid="a552babd-2682-4ff3-bdfa-eff5e8b4d10e"/>
+			</ellipse>
+			<rectangle>
+				<reportElement x="353" y="94" width="3" height="75" forecolor="#323232" backcolor="#323232" uuid="e7c38edf-4f1d-463a-a820-4bcab6764ddd"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="577" y="58" width="209" height="41" forecolor="#AAAAAA" uuid="e2173a3c-67b8-4823-b140-a5047bb50570"/>
+				<textElement>
+					<font fontName="Roboto Light" size="32"/>
+				</textElement>
+				<text><![CDATA[Booking Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="620" y="116" width="125" height="53" forecolor="#1BA0E2" uuid="eb12affb-0f64-4568-b630-e11e473223ff"/>
+				<textElement>
+					<font fontName="Futura Bk BT" size="36"/>
+				</textElement>
+				<text><![CDATA[AB981]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="309" width="34" height="26" forecolor="#505050" uuid="99ee746e-9e7c-4a84-bf35-aaeb48c124e2"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="309" width="168" height="26" forecolor="#505050" uuid="2e5ed890-7e90-46a6-ae46-55828b41da41"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[Passenger Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="353" y="309" width="74" height="26" forecolor="#505050" uuid="268ed7d3-092f-4e2c-8871-613b18bd6c5c"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[ID Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="542" y="309" width="99" height="26" forecolor="#505050" uuid="4ca7aaed-9362-44f7-ad29-16fb3da4e22f"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[ID Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="699" y="309" width="99" height="26" forecolor="#505050" uuid="20ead6d1-2e9d-45e7-8fab-349cd531c9af"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<text><![CDATA[Insurance]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="14" y="67" width="214" height="49" uuid="5d03640f-8842-42c9-810a-ab33c72494bf"/>
+				<textElement>
+					<font fontName="Roboto Black" size="36"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_train_trainnm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="14" y="116" width="192" height="26" forecolor="#323232" uuid="96afd94f-fc0c-464d-9ebb-48d97010bde2"/>
+				<textElement>
+					<font fontName="Roboto Light" size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_train_trclass}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="22" width="260" height="32" uuid="5559c52e-22da-4330-b1ed-0ee4febb8568"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="22"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_train_departure}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="73" width="85" height="26" forecolor="#323232" uuid="0bbbdf11-6656-47ef-801c-78af65242def"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_train_tdepart}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="159" width="85" height="26" forecolor="#323232" uuid="5fada075-ff44-4689-a51e-669894ed6483"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_train_tarrive}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="381" y="73" width="149" height="28" forecolor="#323232" uuid="9ccbbe35-109b-476c-b7ad-5773eea278d0"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_train_kdepart}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="381" y="160" width="149" height="26" forecolor="#323232" uuid="e9d18562-6fcb-4fc7-bfa7-86ec2c7512df"/>
+				<textElement>
+					<font fontName="Roboto Medium" size="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_train_karrive}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="341" width="34" height="30" forecolor="#505050" uuid="9f282c0e-e51e-4a8c-8d5f-add534658b94"/>
+				<textElement textAlignment="Center">
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_train_id_train}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="341" width="44" height="30" forecolor="#505050" uuid="3c495bc1-372d-462c-8aaa-952b8345ce00"/>
+				<textElement>
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_train_title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="132" y="341" width="138" height="28" forecolor="#505050" uuid="bccc0452-67ad-4f1e-b99c-4f9db38da7cf"/>
+				<textElement>
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_train_nmpass}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="341" width="194" height="28" forecolor="#505050" uuid="6cd79c4e-3e06-4d89-aacc-fb6c8b52b390"/>
+				<textElement textAlignment="Center">
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_train_IDtype}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="505" y="341" width="174" height="28" forecolor="#505050" uuid="6f43f164-ecfe-4747-a9e0-6b30e7db495b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Roboto Light" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[""+$F{tb_train_IDnumb}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+</jasperReport>
